@@ -35,10 +35,20 @@ completion for all vim filetypes:
 
     autocmd FileType vim let b:vcm_tab_complete = 'vim'
 
-## Installation
+## Setup (Tested Instructions)
 If you use Vim 8 or better, simply copy and paste:
 
-    git clone git://github.com/ajh17/VimCompletesMe.git ~/.vim/pack/vendor/start/VimCompletesMe
+```
+mkdir -p ~/.vim/pack/vendor/start/VimCompletesMe
+cd ~/.vim/pack/vendor/start/VimCompletesMe
+git clone https://github.com/zc-alexfan/VimCompletesMe.git
+```
+
+To setup TAB completion, in vim,
+
+```
+:autocmd FileType vim let b:vcm_tab_complete = 'vim'
+```
 
 Once the helptags have been generated (`:helptags ALL`), see `:h VimCompletesMe`
 for usage.
